@@ -1,0 +1,12 @@
+/* @import '~antd/dist/antd.css'; */
+@import 'antd/dist/antd.css';
+
+.s-ant-wrap {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-ant-search {
+  width: 50%;
+}
