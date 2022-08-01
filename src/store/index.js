@@ -2,11 +2,12 @@
  * @Description: 
  * @Date: 2022-08-01 17:32:30
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-08-01 21:34:30
+ * @LastEditTime: 2022-08-01 22:38:23
  */
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import reducer from './reducer'
+import thunk  from 'redux-thunk'
 
-const store = createStore(reducer)
+const store = createStore(reducer, applyMiddleware(thunk))
 
 export default store
